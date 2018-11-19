@@ -24,7 +24,7 @@ class Doctor
     appo = Appointment.all.select{|appointment| appointment.doctor == self}
     patients = []
     appo.each do |appointment|
-      
+      patients << appointment.patient
     end 
   end 
 
