@@ -21,6 +21,6 @@ class Patient
   
   def doctors
     appo = Appointment.all.select{|appointment| appointment.patient == self}
-    appo.docto
+    appo.collect
   end 
 end 
