@@ -26,6 +26,7 @@ class Doctor
     appo.each do |appointment|
       patients << appointment.patient
     end 
+    patients
   end 
 
 end 
