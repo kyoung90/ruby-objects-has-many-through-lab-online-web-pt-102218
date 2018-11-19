@@ -21,6 +21,10 @@ class Patient
   
   def doctors
     appo = Appointment.all.select{|appointment| appointment.patient == self}
-    appo.collect
+    arr = []
+    appo.each do |appointment|
+      arr << appointment.doctor 
+    end 
+    arr
   end 
 end 
