@@ -19,7 +19,7 @@ class Doctor
   end 
   
   def appointments
-    @appointments
+    Appointment.all.select{|appointment| appointment.}
   end 
   
   def patients
